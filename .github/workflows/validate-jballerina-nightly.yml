@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh run download ${{ env.LATEST_RUN_ID }} -D "$HOME" --name "Linux installer ZIP" --repo ballerina-platform/ballerina-distribution
+          gh run download 2236606484 -D "$HOME" --name "Linux installer ZIP" --repo ballerina-platform/ballerina-distribution
       - name: Set jBallerina name
         run: |
           echo 'JBALLERINA_NAME<<EOF' >> $GITHUB_ENV
