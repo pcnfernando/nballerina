@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh run download 2239719862 -D "$HOME" --name "Linux installer ZIP" --repo ballerina-platform/ballerina-distribution
+          wget https://github.com/pcnfernando/nballerina/releases/download/untagged-57b3a87186ccd30a5fe6/ballerina-2201.1.0-SNAPSHOT-swan-lake-linux.zip
       - name: Set jBallerina name
         run: |
           echo 'JBALLERINA_NAME<<EOF' >> $GITHUB_ENV
