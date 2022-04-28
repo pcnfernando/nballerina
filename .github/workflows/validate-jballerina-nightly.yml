@@ -33,7 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           unzip "ballerina-2201.1.0-SNAPSHOT-swan-lake-linux.zip" -d "$HOME"
-          chmod +x "ballerina-2201.1.0-SNAPSHOT-swan-lake-linux.zip/bin/bal"  
+          chmod +x "ballerina-2201.1.0-SNAPSHOT-swan-lake-linux/bin/bal"  
       - name: Install jBallerina
         run: |
           echo "${{ env.JBALLERINA_NAME }}/bin/" >> $GITHUB_PATH
