@@ -26,7 +26,7 @@ jobs:
       - name: Set jBallerina name
         run: |
           echo 'JBALLERINA_NAME<<EOF' >> $GITHUB_ENV
-          ls $HOME/ballerina-*.zip | sed 's/.zip//g' >> $GITHUB_ENV
+          ls $HOME/ballerina-2201.1.0-SNAPSHOT-swan-lake-linux.zip | sed 's/.zip//g' >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
       - name: Extract jBallerina
         env:
